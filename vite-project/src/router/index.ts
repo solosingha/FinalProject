@@ -3,9 +3,8 @@ import HelloWorld from '../views/HelloWorld.vue'
 import User from '../views/User.vue'
 import page1 from '../views/page1.vue'
 import page2 from '../views/page2.vue'
-
 import charge from '../views/page3.vue'
-
+import login from '../views/login.vue'
 const routes = [
   {
     path: '/',
@@ -16,7 +15,12 @@ const routes = [
         path:'/user',
         name:'user',
         component:User
-      },
+        },
+        {
+            path: '/login',
+            name: 'login',
+            component: login
+        },
       {
         path:'/page1',
         name:'page1',
